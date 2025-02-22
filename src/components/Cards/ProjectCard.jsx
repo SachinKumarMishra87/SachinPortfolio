@@ -15,7 +15,7 @@ const Button = styled.a`
   transition: background-color 0.3s ease;
 
   &:hover {
-    background-color: ${({ theme }) => theme.primary + 'CC'}; /* Slightly darker on hover */
+    background-color: ${({ theme }) => theme.primary + 'CC'};
   }
 `;
 
@@ -32,7 +32,7 @@ const Card = styled.div`
   flex-direction: column;
   gap: 14px;
   transition: all 0.5s ease-in-out;
-  position: relative; /* Needed for absolute positioning of SourceWebLink */
+  position: relative;
 
   &:hover {
     transform: translateY(-10px);
@@ -75,6 +75,7 @@ const Details = styled.div`
   gap: 0px;
   padding: 0px 2px;
 `;
+
 const Title = styled.div`
   font-size: 20px;
   font-weight: 600;
@@ -111,15 +112,18 @@ const Description = styled.div`
 `;
 
 const SourceWebLink = styled.div`
-  display: none; /* Initially hidden */
+  display: flex; /* Always display on mobile */
   position: absolute;
   bottom: 20px;
   left: 50%;
   transform: translateX(-50%);
   gap: 15px;
 
-  ${Card}:hover & {
-    display: flex; /* Shown on hover */
+  @media (min-width: 768px) { /* Desktop styles */
+    display: none; /* Hide by default on desktop */
+    ${Card}:hover & {
+      display: flex; /* Show on hover on desktop */
+    }
   }
 `;
 
@@ -138,20 +142,16 @@ function ProjectCard({ project }) {
         <Description>{project.description}</Description>
       </Details>
       <SourceWebLink>
-        {
-          project.github && (
-            <Button href={project.github} target="_blank" rel="noopener noreferrer">
-              Source Code
-            </Button>
-          )
-        }
-        {
-          project.webapp && (
-            <Button href={project.webapp} target="_blank" rel="noopener noreferrer">
-              Web Link
-            </Button>
-          )
-        }
+        {project.github && (
+          <Button href={project.github} target="_blank" rel="noopener noreferrer">
+            Source Code
+          </Button>
+        )}
+        {project.webapp && (
+          <Button href={project.webapp} target="_blank" rel="noopener noreferrer">
+            Web Link
+          </Button>
+        )}
       </SourceWebLink>
     </Card>
   );
