@@ -9,11 +9,11 @@ export const Bio = {
       "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
     github: "https://github.com/SachinKumarMishra87",
     resume:
-    "https://drive.google.com/file/d/1mXpz64YhONG4hzQJ--hKL1_tG8fsRUKv/view?usp=sharing",
-    linkedin: "https://www.linkedin.com/in/rishav-chanda-b89a791b3/",
-    twitter: "https://twitter.com/RishavChanda",
-    geeksforgeeks: "https://www.instagram.com/rishav_chanda/",
-    leatcode: "https://www.facebook.com/rishav.chanda.165/",
+    "https://drive.google.com/file/d/15I-waZiziBMFKXYlPZHFeUORsZxhFphW/view",
+    linkedin: "https://www.linkedin.com/in/sachin-mishra87/",
+    twitter: "https://x.com/Sachin_Mishra_0",
+    geeksforgeeks: "https://www.geeksforgeeks.org/user/sachin_mishra_0_1/",
+    leatcode: "https://leetcode.com/u/SachinKumarMishra/",
   };
   
   export const skills = [
@@ -97,17 +97,17 @@ export const Bio = {
         {
           name: "C",
           image:
-            "https://files.oaiusercontent.com/file-3ovS5PGDateqJaVogpTMRSKC?se=2024-09-12T19%3A00%3A20Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3De9211c1c-9d68-41fc-b659-a50f7486da14.webp&sig=zKsxSnpUlp%2BrdDoLTAsJs5MP8aXN1a/msMJlHTPKZcs%3D",
+            "https://upload.wikimedia.org/wikipedia/commons/1/19/C_Logo.png",
         },
         {
           name: "C++",
           image:
-            "https://w7.pngwing.com/pngs/46/626/png-transparent-c-logo-the-c-programming-language-computer-icons-computer-programming-source-code-programming-miscellaneous-template-blue-thumbnail.png",
+            "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C++_Logo.svg",
         },
         {
           name: "JavaScript",
           image:
-            "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/800px-JavaScript-logo.png",
+            "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
         },
       ],
     },
@@ -149,119 +149,15 @@ export const Bio = {
     },
   ];
   
-  // export const experiences = [
-  //   {
-  //     id: 0,
-  //     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-  //     role: "DevOps & Fullstack Engineering Intern",
-  //     company: "Flipr Inovations Pvt. Ltd.",
-  //     date: "Aug 2023 - July 2023",
-  //     desc: "Working on Flipr Platforms, managing DevOps, and streamlining the process with automation.",
-  //     skills: [
-  //       "Docker",
-  //       "Terraform",
-  //       "AWS",
-  //       "EC2",
-  //       "Portainer",
-  //       "Nginx",
-  //       "JavaScript",
-  //       "TypeScript",
-  //       "Node Js",
-  //       " Next Js",
-  //     ],
-  //     doc: "https://media.licdn.com/dms/image/D4D2DAQFlp60ZqHuaFQ/profile-treasury-image-shrink_1280_1280/0/1691180828512?e=1692381600&v=beta&t=mM5Y_NE5EPlQhez5FAN6NLVSKcO_Ojt_9Gq3mnFGkAQ",
-  //   },
-  //   {
-  //     id: 0,
-  //     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/neurobit.jpeg?alt=media&token=1cacbb7b-e5ea-4efb-9b3d-f5a31b9564ad",
-  //     role: "Frontend Engineer Intern",
-  //     company: "Neurobit",
-  //     date: "June 2023 - Present",
-  //     desc: "Working on the frontend of the web application using ReactJS, Redux, and Material UI.",
-  //     skills: [
-  //       "ReactJS",
-  //       "Redux",
-  //       "NodeJs",
-  //       "Material UI",
-  //       "HTML",
-  //       "CSS",
-  //       "JavaScript",
-  //     ],
-  //     doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/Screenshot%20from%202023-05-28%2023-20-46.png?alt=media&token=5570f995-e8f4-4f12-bb2f-73bcf4b20730",
-  //   },
-  //   {
-  //     id: 1,
-  //     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/flipr.jpeg?alt=media&token=1d72532a-45eb-4c1a-a81a-c9bed9fec543",
-  //     role: "Fullstack Externship",
-  //     company: "Flipr",
-  //     date: "June 2023 - July 2023",
-  //     desc: "Built an employee management full stack web app used Docker and deployed on AWS ec2. I was the top performer in the program.",
-  //     skills: [
-  //       "ReactJS",
-  //       "Redux",
-  //       "NodeJs",
-  //       "Material UI",
-  //       "HTML",
-  //       "CSS",
-  //       "JavaScript",
-  //       "Docker",
-  //       "AWS",
-  //       "MongoDB",
-  //     ],
-  //   },
-  //   {
-  //     id: 2,
-  //     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/girlScript.jpeg?alt=media&token=e656a621-cf3c-4230-bf0f-e74b4cec6035",
-  //     role: "Open Source Contributor ",
-  //     company: "GirlScript Summer of Code",
-  //     date: "May 2023 - Present",
-  //     desc: "Contributing to different open-source projects and learn from industry experts",
-  //     doc: "https://media.licdn.com/dms/image/D4D22AQGzSpgFaR4hsQ/feedshare-shrink_800/0/1684079632872?e=1687996800&v=beta&t=i0xWn_k32Oj9SxKfc6rARSbOghXD9Ge6WyEb2p2vvrc",
-  //   },
-  //   {
-  //     id: 3,
-  //     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/gdsc.jpeg?alt=media&token=c162329c-efaa-4be8-a173-8d3f4c48ea70",
-  //     role: "Android Developer",
-  //     company: "DSC KIIT",
-  //     date: "Nov2021 - Present",
-  //     desc: "As an Android developer at the Google Developers Student Club (GDCS), I have had the opportunity to work on exciting projects and collaborate with talented developers who share my passion for technology. Through my involvement with GDCS, I have also had the opportunity to host and participate in numerous events, including hackathons, study jams, and workshops.",
-  //     skills: [
-  //       "Leadership",
-  //       "Mobile Application Development",
-  //       "Kotlin",
-  //       "XML",
-  //       "Figma",
-  //     ],
-  //   },
-  //   {
-  //     id: 4,
-  //     img: "https://firebasestorage.googleapis.com/v0/b/flexi-coding.appspot.com/o/Rudraksha.jpeg?alt=media&token=8f83f41e-d0a1-486f-9c7f-dd4cd1d09e8d",
-  //     role: "Android Developer Intern",
-  //     company: "Rudraksha Welffare Foundation",
-  //     date: "June 2021 - Oct 2021",
-  //     desc: "As an Android Developer Intern at Rudraksha Welfare Foundation from June 2021 to October 2021, I gained valuable hands-on experience in application development. During my tenure, I contributed to the development of the application's back-end cloud functions using Firebase and implemented a front-end with the MVVM structure, which was designed using Figma. I also added a one-to-one video call feature, conceptualized new features, and optimized app performance. This internship helped me enhance my skills in Android development and gave me an opportunity to work in a collaborative team environment.",
-  //     skills: [
-  //       "Android",
-  //       "Java",
-  //       "Kotlin",
-  //       "XML",
-  //       "Node Js",
-  //       "Cloud Firestore",
-  //       "Firebase",
-  //       "Figma",
-  //     ],
-  //     doc: "https://firebasestorage.googleapis.com/v0/b/buckoid-917cf.appspot.com/o/WhatsApp%20Image%202023-05-05%20at%2012.07.39%20AM.jpeg?alt=media&token=9f0e1648-568b-422d-bd0b-1f125f722245",
-  //   },
-  // ];
   
   export const education = [
     {
       id: 0,
-      img: "https://sanskriti.edu.in/blog/wp-content/uploads/2020/08/Sanskriti-Ayurvedic-Medical-College-and-Hospital-470x330.jpg",
+      img: "https://img.jagranjosh.com/images/2024/October/28102024/logo.jmf2.jpg",
       school: "Sanskriti University of Mathura",
       date: "Aug 2022 -  Aug 2025",
       grade: "7.22 CGPA",
-      desc: "I am currently pursuing a Bachelor's of Computer Applications at Sanskriti University, Mathura. I have completed 4 semesters with a CGPA of 7.22. I have gained knowledge in key subjects such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks. Additionally, I am a Fullstack web developer, actively learning and working on exciting projects alongside a team of talented developers.",
+      desc: "I am currently pursuing a Bachelor's of Computer Applications at Sanskriti University, Mathura. I have completed 5 semesters with a CGPA of 7.22. I have gained knowledge in key subjects such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks. Additionally, I am a Fullstack web developer, actively learning and working on exciting projects alongside a team of talented developers.",
       degree: "Bachelor of Computer Application - BCA",
     },
     {
@@ -296,8 +192,8 @@ export const Bio = {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsGeUNNl-OWbOlOjYX2PQaNkb538ZXCSKaA&s",
       tags: ["React Js", "API"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Podstream",
-      webapp: "https://podstream.netlify.app/",
+      // github: "https://github.com/rishavchanda/Podstream",
+      // webapp: "https://podstream.netlify.app/",
     },
     {
       id: 5,
@@ -309,7 +205,7 @@ export const Bio = {
         "https://res.cloudinary.com/practicaldev/image/fetch/s--Fp4Fg2sI--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/b3fpspi3hoy78f8wk7sh.png",
       tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Todo-Web-App",
+      github: "https://github.com/SachinKumarMishra87/Todo-List",
       webapp: "https://rishav-react-todo.netlify.app/",
     },
     {
@@ -322,8 +218,8 @@ export const Bio = {
         "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPMY5ZbHP53VkG1SGWoVrx4ZDReM1TCYgH8w&s",
       tags: ["React Js", "API"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Breaking-Bad",
-      webapp: "https://breaking-bad-webapp.netlify.app",
+      // github: "https://github.com/rishavchanda/Breaking-Bad",
+      // webapp: "https://breaking-bad-webapp.netlify.app",
     },
     {
       id: 7,
@@ -335,29 +231,8 @@ export const Bio = {
         "https://github-production-user-asset-6210df.s3.amazonaws.com/64485885/239726262-c1b061d1-d9d0-42ef-9f1c-0412d14bc4f6.gif",
       tags: ["Html","Css","Javascript","API"],
       category: "web app",
-      github: "https://github.com/rishavchanda/Quiz-Earn",
-      webapp: "https://github.com/rishavchanda/Quiz-Earn",
-    },
-    {
-      id: 8,
-      title: "Face Recognition",
-      date: "Jan 2021",
-      description:
-        "A Face recognition python app made with OpenCV. It uses face_recognition library to detect faces. It uses the webcam to detect faces. It also has a search bar to search for a particular face.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaYGSqxdRPh8cTg8PFkZd_6va00wewKjEG1Q&s",
-      tags: ["Python", "Keras", "TensorFlow", "VGG16", "Pickle", "React"],
-      // category: "machine learning",
-      category: "dsa app",
-      github: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
-      webapp: "https://github.com/rishavchanda/Face-Recodnition-AI-with-Python",
+      // github: "https://github.com/rishavchanda/Quiz-Earn",
+      // webapp: "https://github.com/rishavchanda/Quiz-Earn",
     },
   ];
   
-  export const TimeLineData = [
-    { year: 2017, text: "Started my journey" },
-    { year: 2018, text: "Worked as a freelance developer" },
-    { year: 2019, text: "Founded JavaScript Mastery" },
-    { year: 2020, text: "Shared my projects with the world" },
-    { year: 2021, text: "Started my own platform" },
-  ];

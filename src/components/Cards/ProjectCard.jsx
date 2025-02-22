@@ -1,20 +1,24 @@
 import React from "react";
 import styled from "styled-components";
-import { projects } from "../../data/constants";
 
-const Button = styled.button`
-  display: none;
-  width: 100%;
-  padding: 10px;
-  background-color: ${({ theme }) => theme.white};
-  color: ${({ theme }) => theme.text_black};
-  font-size: 14px;
-  font-weight: 700;
+const Button = styled.a`
+  display: inline-block;
+  padding: 3px 6px;
+  background-color: ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.white};
+  font-size: 11px;
+  font-weight: 600;
   border: none;
-  border-radius: 10px;
+  border-radius: 3px;
   cursor: pointer;
-  transition: all 0.8s ease-in-out;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: ${({ theme }) => theme.primary + 'CC'}; /* Slightly darker on hover */
+  }
 `;
+
 const Card = styled.div`
   width: 330px;
   height: 490px;
@@ -28,13 +32,12 @@ const Card = styled.div`
   flex-direction: column;
   gap: 14px;
   transition: all 0.5s ease-in-out;
+  position: relative; /* Needed for absolute positioning of SourceWebLink */
+
   &:hover {
     transform: translateY(-10px);
     box-shadow: 0 0 50px 4px rgba(0, 0, 0, 0.6);
     filter: brightness(1.1);
-  }
-  &:hover ${Button} {
-    display: block;
   }
 `;
 
@@ -107,6 +110,19 @@ const Description = styled.div`
   text-overflow: ellipsis;
 `;
 
+const SourceWebLink = styled.div`
+  display: none; /* Initially hidden */
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 15px;
+
+  ${Card}:hover & {
+    display: flex; /* Shown on hover */
+  }
+`;
+
 function ProjectCard({ project }) {
   return (
     <Card>
@@ -121,6 +137,22 @@ function ProjectCard({ project }) {
         <Date>{project.date}</Date>
         <Description>{project.description}</Description>
       </Details>
+      <SourceWebLink>
+        {
+          project.github && (
+            <Button href={project.github} target="_blank" rel="noopener noreferrer">
+              Source Code
+            </Button>
+          )
+        }
+        {
+          project.webapp && (
+            <Button href={project.webapp} target="_blank" rel="noopener noreferrer">
+              Web Link
+            </Button>
+          )
+        }
+      </SourceWebLink>
     </Card>
   );
 }

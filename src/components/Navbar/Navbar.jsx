@@ -14,12 +14,11 @@ import {
   MobileLink,
   Sachin,
 } from "./NavbarStyledComponent";
-import { DiCssdeck } from "react-icons/di"; //------------
-import { GiCrossMark } from "react-icons/gi"; //---------
+import { GiTigerHead } from "react-icons/gi";
+
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
 import styled, { useTheme } from "styled-components";
-import { px } from "@mantine/core";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -36,9 +35,11 @@ const Navbar = () => {
               color: "white",
               marginBottom: "20;",
               cursor: "pointer",
+              textDecoration:"none",
             }}
+           onClick={"#about"}
           >
-            <GiCrossMark size="3rem"/>
+            <GiTigerHead size="2.3rem" />
             <Sachin>
             <Span>Sachin Mishra</Span>
             </Sachin>

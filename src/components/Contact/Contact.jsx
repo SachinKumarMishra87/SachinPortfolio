@@ -25,24 +25,20 @@ const initialValues = {
 };
 
 const Contact = () => {
-  const form = useRef();
-
-  const [isSubmitted, setIsSubmitted] = useState(false); // State to track form submission
+  const [isSubmitted, setIsSubmitted] = useState(false);
   const [isLoaded, setIsLoaded] = useState(false);
 
-  const sendEmail = (e) => {
+  const sendEmail = (values) => {
     setIsLoaded(true);
     emailjs
-      .sendForm("service_lm76uz7", "template_fok7ssj", form.current, {
-        publicKey: "cCCYgfLaagh_erek2", // Updated public key
-      })
+      .send("service_lm76uz7", "template_fok7ssj", values, "cCCYgfLaagh_erek2")
       .then(
         () => {
           console.log("SUCCESS!");
-          setIsSubmitted(true); // Set submitted to true on success
-          setIsLoaded(false); // Reset loading state on success
+          setIsSubmitted(true);
+          setIsLoaded(false);
           setTimeout(() => {
-            setIsSubmitted(false); // Hide success message after 2 seconds
+            setIsSubmitted(false);
           }, 2000);
         },
         (error) => {
@@ -51,14 +47,13 @@ const Contact = () => {
         }
       );
   };
-  
 
   const formik = useFormik({
     initialValues,
     validationSchema: signUpSchema,
     onSubmit: (values, { resetForm }) => {
       console.log("onSubmit Value is -- ", values);
-      sendEmail(); // Send the email after form validation
+      sendEmail(values);
       resetForm();
     },
   });
@@ -66,13 +61,13 @@ const Contact = () => {
   return (
     <Container id="contact">
       <FormBg>
-        <HeroBgAnimation/>
+        <HeroBgAnimation />
       </FormBg>
       <Wrapper>
         <Title>Contact Us</Title>
-        <Desc>CQuestion, thought, or just want to say hello?</Desc>
+        <Desc>Question, thought, or just want to say hello?</Desc>
         <Card>
-          <Form onSubmit={formik.handleSubmit} ref={form}>
+          <Form onSubmit={formik.handleSubmit}>
             <Div>
               <InputTitle>Your Name</InputTitle>
               <Input
@@ -85,9 +80,7 @@ const Contact = () => {
                 autoComplete="off"
               />
               {formik.errors.name && formik.touched.name ? (
-                <p
-                  style={{ color: "red", fontSize: "14px", marginLeft: "5px" }}
-                >
+                <p style={{ color: "red", fontSize: "14px", marginLeft: "5px" }}>
                   {formik.errors.name}
                 </p>
               ) : null}
@@ -104,9 +97,7 @@ const Contact = () => {
                 autoComplete="off"
               />
               {formik.errors.email && formik.touched.email ? (
-                <p
-                  style={{ color: "red", fontSize: "14px", marginLeft: "5px" }}
-                >
+                <p style={{ color: "red", fontSize: "14px", marginLeft: "5px" }}>
                   {formik.errors.email}
                 </p>
               ) : null}
@@ -122,9 +113,7 @@ const Contact = () => {
                 autoComplete="off"
               />
               {formik.errors.message && formik.touched.message ? (
-                <p
-                  style={{ color: "red", fontSize: "14px", marginLeft: "5px" }}
-                >
+                <p style={{ color: "red", fontSize: "14px", marginLeft: "5px" }}>
                   {formik.errors.message}
                 </p>
               ) : null}
@@ -138,7 +127,16 @@ const Contact = () => {
             >
               <div>
                 {isSubmitted && (
-                  <p style={{ color: "green", marginTop: "10px" }}>
+                  <p
+                    style={{
+                      color: "green",
+                      marginTop: "10px",
+                      padding: "1px 10px",
+                      border: "1px solid green", // Added border
+                      borderRadius: "4px", // Optional: rounded corners
+                      backgroundColor: "#30b03023", // Optional: light background
+                    }}
+                  >
                     Message sent successfully!
                   </p>
                 )}

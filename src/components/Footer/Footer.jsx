@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
+import { Bio } from "../../data/constants";
 
 const FooterContainer = styled.footer`
   background-color: #282c34;
@@ -192,7 +193,7 @@ function Footer() {
         </NavItems>
         <FooterCenter>
           <IconLink
-            href="https://www.linkedin.com/in/sachin-mishra87/"
+            href={Bio.linkedin}
             target="_blank"
             aria-label="LinkedIn"
           >
@@ -200,15 +201,7 @@ function Footer() {
             <Tooltip>LinkedIn</Tooltip>
           </IconLink>
           <IconLink
-            href="https://www.instagram.com/__its__sachin__mishra__/"
-            target="_blank"
-            aria-label="Instagram"
-          >
-            <InstagramIcon />
-            <Tooltip>Instagram</Tooltip>
-          </IconLink>
-          <IconLink
-            href="https://www.geeksforgeeks.org/user/sachin_mishra_0_1/"
+            href={Bio.geeksforgeeks}
             target="_blank"
             aria-label="GeeksforGeeks"
           >
@@ -216,7 +209,7 @@ function Footer() {
             <Tooltip>GeeksforGeeks</Tooltip>
           </IconLink>
           <IconLink
-            href="https://leetcode.com/u/SachinKumarMishra/"
+            href={Bio.leatcode}
             target="_blank"
             aria-label="LeetCode"
           >
@@ -224,7 +217,7 @@ function Footer() {
             <Tooltip>LeetCode</Tooltip>
           </IconLink>
           <IconLink
-            href="https://x.com/Sachin_Mishra_0"
+            href={Bio.twitter}
             target="_blank"
             aria-label="Twitter"
           >
