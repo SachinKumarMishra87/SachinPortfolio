@@ -196,6 +196,19 @@ export const Bio = {
       webapp: "https://countriesapi-proje.netlify.app/",
     },
     {
+      id: 1,
+      title: "E-Commerce",
+      date: "January 2025",
+      description:
+       "Developed a responsive fullstack web application that allows users to search and filter the product, view detailed about the product, and navigate to individual pages with comprehensive information. , providing seamless switching ",
+      image:
+        "https://www.91-cdn.com/hub/wp-content/uploads/2023/04/Blinkit-instant-grocery-delivery-app.jpg",
+      tags: ["React Js", "API", "Node Js", "Express Js", "Mongodb", "Payment Gatway"],
+      category: "web app",
+      github: "https://github.com/SachinKumarMishra87/Binkeyit-fullstack",
+      webapp: "https://binkeyit-full-stack-ydrn.vercel.app/",
+    },
+    {
       id: 5,
       title: "Todo Web App",
       date: "Jun 2021",
