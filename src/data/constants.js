@@ -206,7 +206,7 @@ export const projects = [
     tags: ["React Js", "API", "Node Js", "Express Js", "Mongodb", "Payment Gatway"],
     category: "web app",
     github: "https://github.com/SachinKumarMishra87/Binkeyit-fullstack",
-    webapp: "https://binkeyit-full-stack-ydrn.vercel.app/",
+    webapp: "https://binkeyit-fullstack-gnn6.vercel.app/",
   },
   {
     id: 2,
