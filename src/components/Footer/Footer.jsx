@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { FaLinkedinIn, FaInstagram, FaTwitter } from "react-icons/fa";
 import { SiGeeksforgeeks, SiLeetcode } from "react-icons/si";
 import { Bio } from "../../data/constants";
+import { FaWhatsapp } from "react-icons/fa";
 
 const FooterContainer = styled.footer`
   background-color: #282c34;
@@ -25,19 +26,35 @@ const FooterContent = styled.div`
   align-items: center;
 `;
 
-const FooterLeft = styled.div`
-  font-size: 1.2rem;
-  text-align: center;
-  color: ${({ theme }) => theme.text_primary};
-  font-weight: bold;
-  text-shadow: 1px 4px 4px black;
-`;
-
 const FooterCenter = styled.div`
   display: flex;
   justify-content: center;
   gap: 20px;
   font-size: 1.5rem;
+`;
+
+const FooterLeft = styled.div`
+  font-size: 1.3rem;
+  text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 4px 4px black;
+`;
+const WhatSappNumberDiv = styled.div`
+  display: flex;
+  align-items: center;
+  gap: 5px;
+`;
+const FooterContactNumber = styled.div`
+ font-size: 16px;
+ text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 4px 4px black;
+`;
+const FooterEmail = styled.p`
+ font-size: 12px;
+ text-align: center;
+  font-weight: bold;
+  text-shadow: 1px 4px 4px black;
 `;
 
 const IconLink = styled.a`
@@ -125,10 +142,9 @@ const LinkedInIcon = styled(FaLinkedinIn)`
   }
 `;
 
-const InstagramIcon = styled(FaInstagram)`
+const WhatsappIcon = styled(FaWhatsapp)`
   &:hover {
-    border-radius: 30%;
-    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+    color: green;
   }
 `;
 
@@ -183,7 +199,21 @@ function Footer() {
   return (
     <FooterContainer>
       <FooterContent>
-        <FooterLeft>Sachin Mishra</FooterLeft>
+        <div className="">
+          <FooterLeft>Sachin Mishra</FooterLeft>
+          <FooterEmail>sachinmishra8707@gmail.com</FooterEmail>
+          <WhatSappNumberDiv>
+            <IconLink
+              href={WhatsappIcon}
+              target="_blank"
+              aria-label="LinkedIn"
+            >
+              <FaWhatsapp size={25}/>
+              <Tooltip>Whatsapp</Tooltip>
+            </IconLink>
+            <FooterContactNumber>+91 87076 25097</FooterContactNumber>
+          </WhatSappNumberDiv>
+        </div>
         <NavItems>
           <NavLink href="#about">About</NavLink>
           <NavLink href="#skills">Skills</NavLink>
@@ -224,9 +254,9 @@ function Footer() {
             <TwitterIcon />
             <Tooltip>Twitter</Tooltip>
           </IconLink>
-          
+
         </FooterCenter>
-        
+
       </FooterContent>
       <RightsReserved>
         &copy; {new Date().getFullYear()} <FooterSpan>Sachin Mishra</FooterSpan>. All rights reserved.
