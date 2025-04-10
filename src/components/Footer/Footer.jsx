@@ -34,10 +34,17 @@ const FooterCenter = styled.div`
 `;
 
 const FooterLeft = styled.div`
-  font-size: 1.3rem;
+  font-size: 1.5rem;
   text-align: center;
   font-weight: bold;
   text-shadow: 1px 4px 4px black;
+  @media(max-width:450px) {
+    font-size: 1rem;
+  }
+
+  @media(max-width:450px) {
+    font-size: 1rem;
+  }
 `;
 const WhatSappNumberDiv = styled.div`
   display: flex;
@@ -49,11 +56,17 @@ const FooterContactNumber = styled.div`
  text-align: center;
   font-weight: bold;
   text-shadow: 1px 4px 4px black;
+  @media(max-width:450px) {
+    font-size: 13px;
+  }
 `;
 const FooterEmail = styled.p`
- font-size: 12px;
+ font-size: 14px;
  text-align: center;
   font-weight: bold;
+  @media(max-width:450px) {
+    font-size: 11px;
+  }
   text-shadow: 1px 4px 4px black;
 `;
 
@@ -146,6 +159,9 @@ const WhatsappIcon = styled(FaWhatsapp)`
   &:hover {
     color: green;
   }
+  @media(max-width:450px) {
+    font-size: 1rem;
+  }
 `;
 
 const GfgIcon = styled(SiGeeksforgeeks)`
@@ -204,7 +220,8 @@ function Footer() {
           <FooterEmail>sachinmishra8707@gmail.com</FooterEmail>
           <WhatSappNumberDiv>
             <IconLink
-              href={WhatsappIcon}
+              href="https://wa.me/918707625097"
+              rel="noopener noreferrer"
               target="_blank"
               aria-label="LinkedIn"
             >
