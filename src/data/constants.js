@@ -260,4 +260,17 @@ export const projects = [
     // github: "https://github.com/rishavchanda/Quiz-Earn",
     // webapp: "https://github.com/rishavchanda/Quiz-Earn",
   },
+  {
+    id: 8,
+    title: "Mern Authentication",
+    date: "March 2025",
+    description:
+      "This is a secure authentication web application built using the MERN stack.User login, signup, email verification, password reset, and logout.",
+    image:
+      "https://galaxy.ai/_next/image?url=https%3A%2F%2Fimg.youtube.com%2Fvi%2F7BTsepZ9xp8%2Fmaxresdefault.jpg&w=3840&q=75",
+    tags: ["React", "Tailwind Css", "Node js", "Express js", "MongoDB"],
+    category: "web app",
+    github: "https://github.com/SachinKumarMishra87/MernCompleteAuth",
+    webapp: "https://mern-complete-authentication.vercel.app",
+  },
 ];
