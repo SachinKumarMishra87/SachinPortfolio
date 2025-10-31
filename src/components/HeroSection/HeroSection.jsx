@@ -13,7 +13,7 @@ import {
 } from "./HeroStyle";
 import { Bio } from "../../data/constants";
 import  Typewriter  from "typewriter-effect";
-import Sachin from "../../images/sachin_img_3.jpg"
+import Sachin from "../../images/sachin_img_4.jpg"
 import HeroBgAnimation from "../HeroBgAnimation";
 
 const HeroSection = () => {

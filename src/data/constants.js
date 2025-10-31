@@ -9,7 +9,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/SachinKumarMishra87",
   resume:
-    "https://drive.google.com/file/d/15I-waZiziBMFKXYlPZHFeUORsZxhFphW/view",
+    "https://drive.google.com/file/d/1DgHXuprdW-LhwjUb_rhH6rxKzRpFtJF7/view",
   linkedin: "https://www.linkedin.com/in/sachin-mishra87/",
   twitter: "https://x.com/Sachin_Mishra_0",
   geeksforgeeks: "https://www.geeksforgeeks.org/user/sachin_mishra_0_1/",
@@ -105,6 +105,11 @@ export const skills = [
           "https://upload.wikimedia.org/wikipedia/commons/1/18/ISO_C++_Logo.svg",
       },
       {
+        name: "Python",
+        image:
+          "https://logo.svgcdn.com/logos/python.png",
+      },
+      {
         name: "JavaScript",
         image:
           "https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png",
@@ -127,7 +132,7 @@ export const skills = [
       {
         name: "Netlify",
         image:
-          "https://seeklogo.com/images/N/netlify-logo-BD8F8A77E2-seeklogo.com.png",
+          "https://logo.svgcdn.com/logos/netlify.png",
       },
       {
         name: "VS Code",
@@ -137,7 +142,7 @@ export const skills = [
       {
         name: "Postman",
         image:
-          "https://static-00.iconduck.com/assets.00/postman-icon-497x512-beb7sy75.png",
+          "https://logo.svgcdn.com/l/postman.png",
       },
 
       {
@@ -156,8 +161,8 @@ export const education = [
     img: "https://img.jagranjosh.com/images/2024/October/28102024/logo.jmf2.jpg",
     school: "Sanskriti University of Mathura",
     date: "Aug 2022 -  Aug 2025",
-    grade: "7.22 CGPA",
-    desc: "I am currently pursuing a Bachelor's of Computer Applications at Sanskriti University, Mathura. I have completed 5 semesters with a CGPA of 7.22. I have gained knowledge in key subjects such as Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks. Additionally, I am a Fullstack web developer, actively learning and working on exciting projects alongside a team of talented developers.",
+    grade: "7.50 CGPA",
+    desc: "I have completed my Bachelor’s in Computer Applications from Sanskriti University, Mathura, with a CGPA of 7.50. During my course, I gained a strong foundation in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks. Additionally, I am a Full Stack Web Developer, passionate about building modern web applications and collaborating with talented teams to create impactful projects.",
     degree: "Bachelor of Computer Application - BCA",
   },
   {
@@ -189,7 +194,7 @@ export const projects = [
     description:
       "Developed a responsive React web application that allows users to search and filter countries, view detailed data for each country, and navigate to individual country pages with comprehensive information. Implemented light and dark mode for enhanced user experience, providing seamless switching between themes.",
     image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtsGeUNNl-OWbOlOjYX2PQaNkb538ZXCSKaA&s",
+      "https://m.media-amazon.com/images/I/713Kfl8uoZL._AC_SX679_.jpg",
     tags: ["React Js", "API"],
     category: "web app",
     github: "https://github.com/SachinKumarMishra87/countries-api",
@@ -228,7 +233,7 @@ export const projects = [
     description:
       " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
     image:
-      "https://res.cloudinary.com/practicaldev/image/fetch/s--Fp4Fg2sI--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://dev-to-uploads.s3.amazonaws.com/uploads/articles/b3fpspi3hoy78f8wk7sh.png",
+      "https://raw.githubusercontent.com/codedex-io/projects/main/projects/create-a-to-do-list-app-with-html-css-js/finished-todo-list.png",
     tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
     category: "web app",
     github: "https://github.com/SachinKumarMishra87/Todo-List",
