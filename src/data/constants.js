@@ -9,7 +9,7 @@ export const Bio = {
     "I am a motivated and versatile individual, always eager to take on new challenges. With a passion for learning I am dedicated to delivering high-quality results. With a positive attitude and a growth mindset, I am ready to make a meaningful contribution and achieve great things.",
   github: "https://github.com/SachinKumarMishra87",
   resume:
-    "https://drive.google.com/file/d/1DgHXuprdW-LhwjUb_rhH6rxKzRpFtJF7/view",
+    "https://drive.google.com/file/d/10IpKuddMsPYIl2Y4jBOT6QtvLIYKr7By/view",
   linkedin: "https://www.linkedin.com/in/sachin-mishra87/",
   twitter: "https://x.com/Sachin_Mishra_0",
   geeksforgeeks: "https://www.geeksforgeeks.org/user/sachin_mishra_0_1/",
@@ -159,7 +159,7 @@ export const education = [
   {
     id: 0,
     img: "https://img.jagranjosh.com/images/2024/October/28102024/logo.jmf2.jpg",
-    school: "Sanskriti University of Mathura",
+    school: "Sanskriti University Mathura",
     date: "Aug 2022 -  Aug 2025",
     grade: "7.50 CGPA",
     desc: "I have completed my Bachelor’s in Computer Applications from Sanskriti University, Mathura, with a CGPA of 7.50. During my course, I gained a strong foundation in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks. Additionally, I am a Full Stack Web Developer, passionate about building modern web applications and collaborating with talented teams to create impactful projects.",
@@ -189,19 +189,6 @@ export const education = [
 export const projects = [
   {
     id: 0,
-    title: "Country Data",
-    date: "June 2024",
-    description:
-      "Developed a responsive React web application that allows users to search and filter countries, view detailed data for each country, and navigate to individual country pages with comprehensive information. Implemented light and dark mode for enhanced user experience, providing seamless switching between themes.",
-    image:
-      "https://m.media-amazon.com/images/I/713Kfl8uoZL._AC_SX679_.jpg",
-    tags: ["React Js", "API"],
-    category: "web app",
-    github: "https://github.com/SachinKumarMishra87/countries-api",
-    webapp: "https://countriesapi-proje.netlify.app/",
-  },
-  {
-    id: 1,
     title: "E-Commerce",
     date: "January 2025",
     description:
@@ -214,7 +201,7 @@ export const projects = [
     webapp: "https://binkeyit-fullstack-gnn6.vercel.app/",
   },
   {
-    id: 2,
+    id: 1,
     title: "100 Days POTD with GFG",
     date: "September 2024",
     description:
@@ -225,35 +212,8 @@ export const projects = [
     category: "dsa app",
     github: "https://github.com/SachinKumarMishra87/DSA-POTD-questions-",
   },
-
   {
-    id: 5,
-    title: "Todo Web App",
-    date: "Jun 2021",
-    description:
-      " A Todo Web App made with React JS, Redux, and Material UI. It has a login page where users can log in with their Google account. It has a sidebar where users can see all the tasks and can create a new task. It has a calendar where users can see all the tasks on a particular date. It has a search bar where users can search for a particular task.",
-    image:
-      "https://raw.githubusercontent.com/codedex-io/projects/main/projects/create-a-to-do-list-app-with-html-css-js/finished-todo-list.png",
-    tags: ["React Js", "Local Storage", "AWS Auth", "Node JS"],
-    category: "web app",
-    github: "https://github.com/SachinKumarMishra87/Todo-List",
-    webapp: "https://rishav-react-todo.netlify.app/",
-  },
-  {
-    id: 6,
-    title: "Breaking News",
-    date: "Jun 2024",
-    description:
-      "A simple react app that shows the Real time Breaking News . It uses the news API to fetch the data. It also has a search bar to search for a particular types news.",
-    image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTPMY5ZbHP53VkG1SGWoVrx4ZDReM1TCYgH8w&s",
-    tags: ["React Js", "API"],
-    category: "web app",
-    // github: "https://github.com/rishavchanda/Breaking-Bad",
-    // webapp: "https://breaking-bad-webapp.netlify.app",
-  },
-  {
-    id: 7,
+    id: 2,
     title: "Quiz App",
     date: "Jan 2024",
     description:
@@ -266,7 +226,7 @@ export const projects = [
     // webapp: "https://github.com/rishavchanda/Quiz-Earn",
   },
   {
-    id: 8,
+    id: 3,
     title: "Mern Authentication",
     date: "March 2025",
     description:
