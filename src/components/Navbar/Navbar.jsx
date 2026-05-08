@@ -14,7 +14,6 @@ import {
   MobileLink,
   Sachin,
 } from "./NavbarStyledComponent";
-import { GiTigerHead } from "react-icons/gi";
 
 import { FaBars } from "react-icons/fa";
 import { Bio } from "../../data/constants";
@@ -39,7 +38,6 @@ const Navbar = () => {
             }}
            onClick={"#about"}
           >
-            <GiTigerHead size="2.3rem" />
             <Sachin>
             <Span>Sachin Mishra</Span>
             </Sachin>
