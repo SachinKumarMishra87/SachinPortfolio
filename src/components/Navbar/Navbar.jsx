@@ -39,7 +39,7 @@ const Navbar = () => {
            onClick={"#about"}
           >
             <Sachin>
-            <Span>Sachin Mishra</Span>
+            <Span>Sachin</Span>
             </Sachin>
           </a>
         </NavLogo>
